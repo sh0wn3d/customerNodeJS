@@ -1,0 +1,15 @@
+extends ./layout.pug
+block contenido
+	h1 Pagina de registro / SignUp
+	form(action="/registro",method="POST")
+		div(class="from-group")
+			label(for="nombre") Nombre
+			input(type="text", name="nombre", class="form-control")
+		div(class="from-group")
+			label(for="email") Email
+			input(type="text", name="email", class="form-control")
+		div(class="from-group")
+			label(for="password") Password
+			input(type="password", name="password", class="form-control")
+		div(class="from-group")
+			input(type="submit", value="Registrarse", class="btn btn-info")
